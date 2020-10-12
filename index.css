@@ -5,10 +5,41 @@ body {
 h1 {
   font-family: "Noto Serif JP", serif;
   font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 0;
+  margin-top: 10rem;
+}
+
+.mt-0 {
+  margin-top: 0;
 }
 
 h2 {
   font-size: 32px;
+  margin-top: 0.25rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-blue {
+  color: #3b3863;
+}
+
+.font-orange {
+  color: #f8a18f;
+}
+
+.font-grey {
+  color: #dedede;
+}
+
+section {
+}
+
+.mt-5 {
+  margin-top: 5rem;
 }
 
 p {
@@ -45,6 +76,7 @@ p {
 
 .bg-text h1 {
   font-size: 2.5rem;
+  margin-top: 0;
 }
 
 .action-area {
@@ -63,7 +95,6 @@ p {
   margin-top: 4rem;
   display: flex;
   justify-content: space-around;
-  align-items: center;
 }
 
 .current-btn {
@@ -91,6 +122,29 @@ p {
   font-style: normal;
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
+}
+
+.dashboard-btn {
+  color: white;
+  background: #3b3863;
+  border: none;
+  padding: 1.25rem 3rem;
+  border-radius: 50px;
+  display: block;
+  margin: auto;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+}
+
+.progress-status {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.percent {
+  font-size: 8rem;
 }
 
 .container {
@@ -139,12 +193,94 @@ p {
   box-shadow: 0px 0.125rem 0.25rem 3px rgba(0, 0, 0, 0.075);
 }
 
+.progress-section {
+  margin-top: 10rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 .cards {
   margin-left: 2rem;
   margin-top: 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
 }
 
-.cards > div {
+.right-arrow {
+  height: 100px;
+}
+
+.cards > div > img {
+  height: 150px;
+  width: 150px;
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0px 0.125rem 0.25rem 3px rgba(0, 0, 0, 0.075);
+}
+
+.dark-card > img {
+  background: #3b3863;
+}
+
+.dark-card {
+  position: absolute;
+  margin-left: 35rem;
+  margin-top: 10rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+  .dark-card {
+    position: relative;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .percent {
+    font-size: 5rem;
+  }
+
+  .cards > div > img {
+    height: 120px;
+    width: 120px;
+    display: block;
+    margin: auto;
+  }
+
+  .cards > div {
+    text-align: center;
+  }
+
+  .bg-text h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .speech .text {
+    padding: 1.5rem;
+  }
+  .triangle {
+    margin-left: 1rem;
+  }
+
+  .current-btn,
+  .goal-btn {
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
+
+  .right-arrow {
+    height: 50px;
+  }
 }
