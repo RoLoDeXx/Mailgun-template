@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Noto Serif JP", serif;
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.75rem;
+  font-size: 20px;
+}
+
+.bg {
+  background-image: url("./assets/cropped-bg.jpg");
+  background-color: #cccccc;
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 0px 5px 30px #777;
+}
+
+.bg-text {
+  position: absolute;
+  top: 80%;
+  left: 3%;
+  transform: translate(0%, -50%);
+  color: white;
+  font-weight: lighter;
+}
+
+.bg-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+
+.bg-text h1 {
+  font-size: 2.5rem;
+}
+
+.action-area {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.action-area > p {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: #aaa;
+}
+
+.action-area > div {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.current-btn {
+  color: white;
+  background: #3b3863;
+  border: none;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  font-weight: 900;
+  border-radius: 50px;
+}
+
+.goal-btn {
+  color: white;
+  background: #f8a18f;
+  border: none;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  font-weight: 900;
+  border-radius: 50px;
+}
+
+.btn-label {
+  color: black;
+  font-style: normal;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.badges-section > div {
+  display: flex;
+  align-items: flex-start;
+}
+
+.badges-section img {
+  height: 14rem;
+  width: auto;
+}
+
+.triangle {
+  margin-left: 2rem;
+  width: 0;
+  height: 0;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid white;
+  box-shadow: -6px -3px 10px -2px rgba(0, 0, 0, 0.075);
+  margin-right: -1.25rem;
+  transform: rotate(-45deg);
+}
+
+.speech {
+  display: flex;
+  align-items: center;
+}
+
+.speech .text {
+  padding: 1.5rem 3rem;
+  box-shadow: 0px 0.125rem 0.25rem 3px rgba(0, 0, 0, 0.075);
+}
+
+.cards {
+  margin-left: 2rem;
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.cards > div {
+}
