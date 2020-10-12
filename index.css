@@ -158,6 +158,13 @@ p {
   align-items: center;
 }
 
+.grid-2 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
 .font-roboto {
   font-family: "Roboto", sans-serif;
 }
